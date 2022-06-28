@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body bgcolor="lightyellow" background="its.png">
+
+ 
+    
+    <script src="index.js" type="module"></script>
+    <script src="home.js" type="module"></script>
+    <script src="aggiungi.js" type="module"></script>
+    <header class="header">
+
+    </header>
+    <div class="box">
+      
+      <h2>Ecco i post in mysql</h2>
+      <p>Per aggiungere post scrivere nelle label</p>
+      
+      <form id="frm1" align="central" action="home.html">
+
+        <select name="category" id="cat">
+          <option value="scienze">scienze</option>
+          <option value="news">news</option>
+          <option value="storia">storia</option>
+          <option value="geografia">geografia</option>
+          <option value="medicina">medicina</option>
+      </select>
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <BR><BR>
+        <input type="button" onclick="myjson()" value="Carica post json">
+        <input type="button" onclick="mySubmit()" value="Aggiungi nuovi post">
+        <input type="button" onclick="myFunction()" value="reset">
+        <br><br>
+       </form>
+       
+       <form id="frm2" action="update.html">
+        <input type="button" onclick="myupdate()" value="aggiorna i post">
+
+       </form>
+        
+       
+       
+      
+      <script>
+        function myjson() {
+          document.getElementById("frm1").submit();
+        }
+  
+
+        function myFunction() {
+          document.getElementById("frm1").reset();
+        }
+  
+        function mySubmit() {
+          document.getElementById("frm1").submit();
+        }
+        function myupdate() {
+          document.getElementById("frm2").submit();
+        }
+
+
+        </script>
+
+      
+      <img src="post.png" align="central">
+      <img src="banner.png" align="right">
+
+
+     
+
+    </div>
+  
+
+
+    
+      
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>blog</title>
+</head>
+<body bgcolor="lightyellow">
+    <h1>Aggiorna i post</h1>
+    <script src="index.js" type="module"></script>
+    <script src="home.js" type="module"></script>
+    <script src="update.js" type="module"></script>
+    
+    <post-list></post-list>
+    
+    <form id="frm1" align="right" action="index.html">
+        <table border="4px" bgcolor="lightyellow" align="center">
+            <thead>
+                
+                 <tr>
+                     <th>idposts</th>
+                     <th>category</th>
+                     <th>title</th>
+                     <th>content</th>
+                     <th>comments</th>
+                     <th>created</th>
+                 </tr>
+             </thead>
+             <tbody>
+             <thead>
+                 <tr>
+     
+                     <td><input type="text"></td>
+                     <td> <select name="category" id="cat">
+                        <option value="scienze">scienze</option>
+                        <option value="news">news</option>
+                        <option value="storia">storia</option>
+                        <option value="geografia">geografia</option>
+                        <option value="medicina">medicina</option>
+                    </select>
+                    </td>
+                     
+                     
+                     
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                 </tr>
+     
+                 <tr>
+                     <td><input type="reset" name="invia" value="cancella">
+                        <br><br>
+                    </td>
+                     <td><INPUT type="submit" NAME="LOGIN" VALUE="invia" ></td>
+                    <td> <input type="button" onclick="myFunction()" value="torna in home"></td>
+                     
+                 </tr>
+     
+             </tbody>
+             <tfoot>
+                 
+             </tfoot>
+             
+     
+            </thead>
+            
+        </table> 
+        <br><br>
+         
+    </form>
+    <script>
+         function myFunction() {
+         document.getElementById("frm1").submit();
+        }
+  
+    </script>
+  
+
+
+</body>
+</html>
